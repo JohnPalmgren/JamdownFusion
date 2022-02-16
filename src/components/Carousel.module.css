@@ -1,0 +1,67 @@
+.background {
+    width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, green, yellow);
+}
+
+h1 {
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 30px
+}
+
+.carousel {
+  /* width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, green, yellow); */
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+/* add animation */
+
+.foodImg {
+  height: 500px;
+  /* position: absolute; */
+}
+
+.hidden {
+  /* position: absolute; */
+  display: none;
+
+}
+
+@keyframes carousel {
+}
+
+/* remove button default styles */
+
+.navigateLeft,
+.navigateRight {
+  position: absolute;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.navigateLeft {
+  left: 250px;
+}
+
+.navigateRight {
+  right: 250px;
+}
+
+.navigateLeft img,
+.navigateRight img {
+  width: 50px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px #000;
+}

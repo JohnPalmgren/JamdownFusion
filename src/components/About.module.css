@@ -1,0 +1,25 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top right, green, yellow);
+}
+
+.profileImg {
+    border-radius: 400px;
+    width: 350px;
+    margin: 0 50px 0 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flex p {
+  margin: 0;
+  padding: 0 50px 0 50px;
+  max-width: 750px;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
