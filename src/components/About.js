@@ -7,7 +7,7 @@ const About = () => {
       <div className={classes.background}>
         <h1>About</h1>
         <div className={classes.flex}>
-          <p>
+          <p className={classes.aboutPara}>
             Elaine decided during the Covid lockdown that there is more to life
             than paying a huge mortgage and commuting into the City to work as a
             lawyer. She downsized, moved to Swindon (her childhood home) and
@@ -18,9 +18,13 @@ const About = () => {
             blood and she thinks Jamaican food is some of the most flavoursome
             food around. Having spent many years feeding her many friends from
             London and Luton, Elaine now wants to branch out and feed Swindon!
-            She believes in quality food at affordable prices.
           </p>
-          <img src={aboutImg} alt="Elaine" className={classes.profileImg} />
+          <div>
+            <img src={aboutImg} alt="Elaine" className={classes.profileImg} />
+            <p className={classes.quote}>
+              "I believe in quality food at affordable prices."
+            </p>
+          </div>
         </div>
       </div>
     );

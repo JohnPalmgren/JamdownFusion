@@ -1,20 +1,20 @@
 import classes from "./Nav.module.css"
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav className={classes.navbar}>
       <ul>
         <li>
-          <a>Menu</a>
+          <button className={classes.button} onClick={props.menuScroll}>Menu</button>
         </li>
         <li>
-          <a>Order</a>
+          <button className={classes.button} onClick={props.orderScroll}>Order</button>
         </li>
         <li>
-          <a>About</a>
+          <button className={classes.button} onClick={props.aboutScroll}>About</button>
         </li>
       </ul>
-      <button className={classes.allergensBtn}>
+      <button className={classes.allergensBtn} onClick={props.openModal}>
         <div>Allergens</div>
       </button>
     </nav>

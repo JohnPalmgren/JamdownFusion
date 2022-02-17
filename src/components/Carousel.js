@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import classes from "./Carousel.module.css";
 
@@ -14,6 +14,13 @@ import right from "../images/right.png"
 const Carousel = () => {
     
     const [currentImg, setCurrentImg] = useState(1)
+
+    useEffect(() => {
+      const timer = setInterval(() => {
+        shiftRight()
+      }, 4000)
+      return () => clearInterval(timer)
+    })
 
     const shiftRight = () => {
         if (currentImg < 5) {
@@ -35,12 +42,12 @@ const Carousel = () => {
       <div className={classes.background}>
         <h1>Order by text or whatsapp on 07306 353836</h1>
         <div className={classes.carousel}>
-          <button className={classes.navigateLeft} onClick={shiftLeft}>
+          {/* <button className={classes.navigateLeft} onClick={shiftLeft}>
             <img src={left} alt="display item to left" />
           </button>
           <button className={classes.navigateRight} onClick={shiftRight}>
             <img src={right} alt="display item to right" />
-          </button>
+          </button> */}
 
           <img
             src={image1}

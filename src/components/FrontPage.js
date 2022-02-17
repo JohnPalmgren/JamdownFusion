@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import classes from "./FrontPage.module.css"
 
-const FrontPage = () => {
+const FrontPage = (props) => {
     return (
       <Fragment>
         <div className={classes.flex}>
@@ -12,8 +12,8 @@ const FrontPage = () => {
             <h2 className={classes.text}>Traditional Jamaican  food delivered to you</h2>
           </div>
           <div className={classes.buttons}>
-              <button>VIEW MENU</button>
-              <button>ORDER NOW</button>
+              <button onClick={props.menuScroll}>VIEW MENU</button>
+              <button onClick={props.orderScroll}>ORDER NOW</button>
           </div>
         </div>
         <div className={classes.background}></div>

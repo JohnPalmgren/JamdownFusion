@@ -1,5 +1,5 @@
 .footer {
-    width: 100vw;
+    position: relative;
     background-color: #008f00;
     text-align: center;
     padding: 10px;
@@ -25,4 +25,14 @@
     vertical-align: baseline;
     margin-right: 8px;
     font-size: 1.2rem;
+}
+
+.admin {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2px;
 }

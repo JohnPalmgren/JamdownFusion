@@ -1,5 +1,11 @@
 .menuImg {
   height: 100vh;
+  cursor: zoom-in;
+}
+
+.menuZoom {
+  width: 100%;
+  cursor: zoom-out;
 }
 
 .wrapper {
@@ -19,7 +25,7 @@ h1 {
     position:absolute;
     z-index: -1;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #008f00;
     background-image: url("../images/flag.png");
     background-size: cover;

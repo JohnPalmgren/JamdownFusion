@@ -1,5 +1,5 @@
 .background {
-    width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: linear-gradient(to bottom right, green, yellow);
 }
@@ -7,31 +7,40 @@
 h1 {
   margin: 0;
   padding-top: 100px;
-  padding-bottom: 30px
+  padding-bottom: 30px;
+  margin: auto;
+  width:70vw;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.5rem;
 }
 
 .carousel {
-  /* width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(to bottom right, green, yellow); */
-  /* height: 100%; */
+
   display: flex;
   align-items: center;
   justify-content: center;
-  /* align-items: center; */
 }
 
-/* add animation */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
 
 .foodImg {
   height: 500px;
+  animation-name: fade;
+  animation-duration: 3s;
   /* position: absolute; */
 }
 
 .hidden {
   /* position: absolute; */
   display: none;
-
 }
 
 @keyframes carousel {
