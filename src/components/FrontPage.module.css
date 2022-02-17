@@ -28,6 +28,7 @@
 .overlay h1 {
   padding: 0;
   font-size: 4rem;
+  width: fit-content;
 }
 
 .overlay h2 {
