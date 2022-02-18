@@ -34,6 +34,7 @@
 .overlay h2 {
   font-family: "Rubik", sans-serif;
   font-size: 1.7rem;
+  text-align: center;
 }
 
 .overlay {
@@ -63,3 +64,21 @@
   filter: brightness(150%);
   box-shadow: 15px 15px 15px #000;
 }
+
+
+@media screen and (max-width: 458px) {
+  .overlay:first-of-type {
+    margin-top: 50px;
+  }
+
+  .buttons button {
+    width: 100px;
+    margin: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 3rem;
+  }
+
+}
+

@@ -31,3 +31,10 @@ h1 {
     background-size: cover;
     background-position: center;
 }
+
+@media screen and (max-width: 530px) {
+ .menuImg, .menuZoom {
+   height: auto;
+   width: 100%;
+ } 
+}

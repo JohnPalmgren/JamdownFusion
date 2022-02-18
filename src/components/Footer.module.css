@@ -1,5 +1,8 @@
 .footer {
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #008f00;
     text-align: center;
     padding: 10px;
@@ -9,6 +12,8 @@
     color: #fff;
     font-size: 1.2rem;
     margin: 0;
+    width:fit-content;
+    margin-right: 80px;
 }
 
 .star {
@@ -17,22 +22,32 @@
 }
 
 .rating {
-    margin-top: 8px;;
+    margin-top: 8px;
+        width: fit-content;
+
 }
 
 .rating p {
     display: inline-block;
     vertical-align: baseline;
     margin-right: 8px;
-    font-size: 1.2rem;
-}
+    font-size: 1.2rem;}
 
 .admin {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
+    width:fit-content;
     cursor: pointer;
     color: #fff;
     border: 1px solid #fff;
     padding: 2px;
+    /* align-self: end;
+    justify-self: start; */
+    position: absolute;
+    right: 10px;
+}
+
+.row1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

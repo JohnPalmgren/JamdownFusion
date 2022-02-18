@@ -19,7 +19,7 @@ const About = () => {
             food around. Having spent many years feeding her many friends from
             London and Luton, Elaine now wants to branch out and feed Swindon!
           </p>
-          <div>
+          <div className={classes.profileWrap}>
             <img src={aboutImg} alt="Elaine" className={classes.profileImg} />
             <p className={classes.quote}>
               "I believe in quality food at affordable prices."
