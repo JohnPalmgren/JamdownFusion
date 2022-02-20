@@ -65,6 +65,107 @@
   box-shadow: 15px 15px 15px #000;
 }
 
+.testimonials__para {
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.testimonials {
+  position: relative;
+}
+
+.hidden {
+
+  position: absolute;
+  bottom:80px;
+  left: calc(50% - 100px);
+  opacity: 0;
+}
+
+.fadeIn {
+      background-color: rgb(255 255 255 / 66%);
+  padding: 20px;
+  margin: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgb(83, 138, 81);
+    animation: fadeIn 4s ;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+} */
+
+/* .testimonials__para:nth-of-type(2) {
+  animation-delay: 2s;
+}
+
+.testimonials__para:nth-child(3) {
+  animation-delay: 2s;
+}
+.testimonials__para:nth-child(4) {
+  animation-delay: 2s;
+}
+.testimonials__para:nth-child(5) {
+  animation-delay: 2s;
+}
+.testimonials__para:nth-child(6) {
+  animation-delay: 2s;
+}
+.testimonials__para:nth-child(7) {
+  animation-delay: 2s;
+}
+.testimonials__para:nth-child(8) {
+  animation-delay: 2s;
+} */
+
+/* .slideIn {
+  position: relative;
+  transition: all 0.3s linear;
+  left: 0;
+} */
+
+/* .slideOut {
+    position: relative;
+  transition: all 0.3s linear;
+  left: -4000;
+} */
 
 @media screen and (max-width: 458px) {
   .overlay:first-of-type {
@@ -79,6 +180,4 @@
   .overlay h1 {
     font-size: 3rem;
   }
-
 }
-
