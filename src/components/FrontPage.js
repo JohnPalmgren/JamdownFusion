@@ -23,11 +23,11 @@ const FrontPage = (props) => {
     if (currentQuote === num) {
       console.log("slidein");
       return classes.fadeIn;
-    } 
+    }
     // else if (currentQuote === num - 1) {
     //   console.log("slideout");
     //   return classes.slideOut;
-    // } 
+    // }
     else {
       console.log("hidden");
       return classes.hidden;
@@ -57,15 +57,15 @@ const FrontPage = (props) => {
           </div>
           <div className={classSwitcher(2)}>
             <p className={classes.testimonials__para}>
-              "Swindon is in for a treat this Friday! Elaine's home cooked food
-              is one of the finest Jamaican cuisine around. Made with love and
-              tastes absolutely delicious. Yum Yum" - Yvonne
+              "Elaine's home cooked food is one of the finest Jamaican cuisine
+              around. Made with love and tastes absolutely delicious. Yum Yum" -
+              Yvonne
             </p>
           </div>
           <div className={classSwitcher(3)}>
             <p className={classes.testimonials__para}>
               "This food is amazing - full of flavour and tastes good too. my
-              favourite is defo the cup cakes and bigger cakes." - Amanda
+              favourite is the cakes." - Amanda
             </p>
           </div>
           <div className={classSwitcher(4)}>
@@ -76,9 +76,8 @@ const FrontPage = (props) => {
           </div>
           <div className={classSwitcher(5)}>
             <p className={classes.testimonials__para}>
-              "One of the best cooks i know. Her cakes is amazing .You only have
-              to order once i promise you will be hooked.Missing her amazing
-              dishes and cakes this side of Bedfordshire x" - Maud
+              "One of the best cooks I know. Her cakes is amazing .You only have
+              to order once i promise you will be hooked." - Maud
             </p>
           </div>
           <div className={classSwitcher(6)}>
@@ -131,8 +130,7 @@ const FrontPage = (props) => {
               "Tried your carrot cake at new year and Wow! Just had a slice of
               your home made black cake because when I'm having a stressful day
               it always helps. Elaine I have no need to go elsewhere you are my
-              main cake maker and I haven't even started with the food.
-              Definitely ordering for the rest of the year" - Debra
+              main cake maker" - Debra
             </p>
           </div>
         </div>
