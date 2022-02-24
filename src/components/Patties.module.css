@@ -19,6 +19,7 @@
 .pattiesImg {
   margin: 1.5rem;
   border-radius: 20px;
+  height: fit-content;
 }
 
 .text {
@@ -27,8 +28,11 @@
 }
 
 .text p {
-  margin: 4rem 2rem 1rem 2rem;
+  margin: 0 3rem 0 3rem;
   font-size: 1.3rem;
   font-family: "Rubik", sans-serif;
 }
 
+.bulk {
+  margin-left: 3rem;
+}
