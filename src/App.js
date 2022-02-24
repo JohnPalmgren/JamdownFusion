@@ -23,6 +23,7 @@ function App() {
   const scrollToMenu = useRef();
   const scrollToOrder = useRef();
   const scrollToAbout = useRef();
+  const scrollToPatties = useRef();
   const menuScrollHandler = () => {
     scrollToMenu.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -32,6 +33,9 @@ function App() {
   const aboutScrollHandler = () => {
     scrollToAbout.current.scrollIntoView({ behavior: "smooth" });
   };
+  const pattiesScrollHandler = () => {
+    scrollToPatties.current.scrollIntoView({ behavior: "smooth"} )
+  }
 
   return (
     <div>
@@ -39,6 +43,7 @@ function App() {
         menuScroll={menuScrollHandler}
         orderScroll={orderScrollHandler}
         aboutScroll={aboutScrollHandler}
+        pattiesScroll={pattiesScrollHandler}
         openModal={openAllergensModal}
       />
       <FrontPage
@@ -49,6 +54,7 @@ function App() {
       <Menu />
       <div ref={scrollToOrder}></div>
       <Carousel />
+      <div ref={scrollToPatties}></div>
       <Patties />
       <div ref={scrollToAbout}></div>
       <About />

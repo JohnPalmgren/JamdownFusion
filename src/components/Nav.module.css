@@ -1,3 +1,8 @@
+
+.img {
+  height: 60px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -7,6 +12,10 @@
   background-color: #008f00;
   display: flex;
   justify-content: space-between;
+}
+
+.links {
+  display: flex;
 }
 
 .navbar ul {
