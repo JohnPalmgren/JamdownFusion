@@ -7,6 +7,7 @@ import LogIn from "./components/LogIn";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Allergens from "./components/Allergens";
+import Patties from "./components/Patties"
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
       <Menu />
       <div ref={scrollToOrder}></div>
       <Carousel />
+      <Patties />
       <div ref={scrollToAbout}></div>
       <About />
       <Footer />

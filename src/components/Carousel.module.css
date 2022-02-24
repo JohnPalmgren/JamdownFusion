@@ -1,7 +1,7 @@
 .background {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, green, yellow);
+  background-image: linear-gradient(to top right, green, yellow);
 }
 
 .background h1 {

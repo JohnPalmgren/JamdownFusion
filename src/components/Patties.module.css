@@ -1,0 +1,34 @@
+.background {
+  width: 100%;
+  /* height: 100vh; */
+  background-image: linear-gradient(to bottom right, green, yellow);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.background h1 {
+    margin: 0;
+    padding-top: 5.5rem;
+    padding-bottom: 1.5rem;;
+}
+
+.pattiesImg {
+  margin: 1.5rem;
+  border-radius: 20px;
+}
+
+.text {
+    width: 60%;
+    max-width: 850px;;
+}
+
+.text p {
+  margin: 4rem 2rem 1rem 2rem;
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+}
+
