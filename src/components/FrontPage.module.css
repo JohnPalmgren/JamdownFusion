@@ -1,7 +1,7 @@
 .background {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   height: 100vh;
   background-image: url("../images/hero.jpg");
@@ -109,67 +109,10 @@
   }
 }
 
-/* @keyframes display {
-  0% {
-    transform: translateX(200px);
-    opacity: 0;
-  }
-  10% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  20% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  30% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-} */
 
-/* .testimonials__para:nth-of-type(2) {
-  animation-delay: 2s;
-}
-
-.testimonials__para:nth-child(3) {
-  animation-delay: 2s;
-}
-.testimonials__para:nth-child(4) {
-  animation-delay: 2s;
-}
-.testimonials__para:nth-child(5) {
-  animation-delay: 2s;
-}
-.testimonials__para:nth-child(6) {
-  animation-delay: 2s;
-}
-.testimonials__para:nth-child(7) {
-  animation-delay: 2s;
-}
-.testimonials__para:nth-child(8) {
-  animation-delay: 2s;
-} */
-
-/* .slideIn {
-  position: relative;
-  transition: all 0.3s linear;
-  left: 0;
-} */
-
-/* .slideOut {
-    position: relative;
-  transition: all 0.3s linear;
-  left: -4000;
-} */
-
-@media screen and (max-width: 458px) {
+@media screen and (max-width: 558px) {
   .overlay:first-of-type {
-    margin-top: 50px;
+    margin-top: 90px;
   }
 
   .buttons button {
@@ -179,5 +122,17 @@
 
   .overlay h1 {
     font-size: 3rem;
+  }
+
+  .background {
+    height: fit-content;
+  }
+
+  .testimonials {
+    height: 360px;
+  }
+
+  .flex {
+    height: 100%;
   }
 }

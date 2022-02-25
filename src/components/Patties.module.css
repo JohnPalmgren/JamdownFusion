@@ -36,3 +36,21 @@
 .bulk {
   margin-left: 3rem;
 }
+
+.background h1 {
+  padding: 150px 0 32px 0
+}
+
+@media screen and (max-width:993px) {
+  .text {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .background h1 {
+    width: 70%;
+    margin: auto;
+  }
+}
