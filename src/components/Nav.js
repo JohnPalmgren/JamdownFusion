@@ -1,12 +1,12 @@
-import classes from "./Nav.module.css"
-import star from "../images/pattiesStar.png"
+import classes from "./Nav.module.css";
+import star from "../images/pattiesStar.png";
 import Patties from "./Patties";
 
 const Nav = (props) => {
   return (
     <nav className={classes.navbar}>
       <div className={classes.links}>
-        <ul>
+        <ul className={classes.navList}>
           <li>
             <button className={classes.button} onClick={props.menuScroll}>
               Menu

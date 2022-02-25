@@ -1,4 +1,3 @@
-
 .img {
   height: 55px;
 }
@@ -84,20 +83,9 @@
   box-shadow: 5px 5px 10px #000;
 }
 
+/* hamburgerButton */
 
-@media screen and (max-width: 530px) {
-  .navbar ul li:first-child {
-  margin-left: 15px;
+
+@media screen and (max-width: 600) {
+/* https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ */
 }
-
-.navbar ul {
-  margin: 0;
-  padding-right: 0;
-}
-
-}
-
-
-
-
-
