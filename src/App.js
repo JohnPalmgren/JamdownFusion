@@ -3,7 +3,6 @@ import Nav from "./components/Nav";
 import FrontPage from "./components/FrontPage";
 import Menu from "./components/Menu";
 import Carousel from "./components/Carousel";
-import LogIn from "./components/LogIn";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Allergens from "./components/Allergens";
@@ -60,7 +59,6 @@ function App() {
       <About />
       <Footer />
       <Allergens view={viewAllergens} closeModal={closeAllergensModal}/>
-      <LogIn isLoggedIn={false} />
     </div>
   );
 }

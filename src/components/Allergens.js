@@ -1,7 +1,25 @@
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import classes from "./Allergens.module.css";
+import { client } from "../client";
+
 
 const Allergens = (props) => {
+
+  const [allergens, setAllergens] = useState([])
+
+  useEffect(() => {
+    client
+      .getEntries()
+      .then((response) => {
+        setAllergens(response.items[0].fields.allergens);
+      })
+      .catch(console.error);
+    }, []);
+
+    const allergenListItems = allergens.map((item, index) => {
+      return (<li key={index}>{item}</li>)
+    })
+
       return (
         <Fragment>
           <div
@@ -16,7 +34,8 @@ const Allergens = (props) => {
               The food from Jamdown Fusion may contain the following Allergens
             </p>
             <ul>
-              <li>Celery</li>
+              {allergenListItems}
+              {/* <li>Celery</li>
               <li>Gluten</li>
               <li>Eggs</li>
               <li>Fish</li>
@@ -28,7 +47,7 @@ const Allergens = (props) => {
               <li>Sesame</li>
               <li>Soybeans</li>
               <li>Sulphites</li>
-              <li>Tree Nuts</li>
+              <li>Tree Nuts</li> */}
             </ul>
           </div>
         </Fragment>
