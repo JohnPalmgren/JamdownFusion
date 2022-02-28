@@ -50,6 +50,11 @@
 }
 
 @media screen and (max-width: 960px) {
+
+  .ratingImg {
+    align-self: inherit;
+  }
+
   .background {
     height: auto;
   }

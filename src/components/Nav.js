@@ -3,9 +3,16 @@ import star from "../images/pattiesStar.png";
 import Patties from "./Patties";
 
 const Nav = (props) => {
+
   return (
     <nav className={classes.navbar}>
       <div className={classes.links}>
+        <input
+          type="checkbox"
+          id="hamburger"
+          className={classes.hamburger}
+        />
+        <label htmlFor="hamburger" className={classes.label}><div className={classes.buttonBars}></div></label>
         <ul className={classes.navList}>
           <li>
             <button className={classes.button} onClick={props.menuScroll}>

@@ -28,7 +28,6 @@ const FrontPage = (props) => {
     //   return classes.slideOut;
     // }
     else {
-      console.log("hidden");
       return classes.hidden;
     }
   };
