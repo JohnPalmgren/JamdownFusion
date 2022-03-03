@@ -47,6 +47,7 @@
 .ratingImg {
   width: 350px;
   align-self: flex-end;
+  margin: 20px 0 20px 0;
 }
 
 @media screen and (max-width: 960px) {
