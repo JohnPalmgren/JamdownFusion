@@ -7,7 +7,6 @@ const Footer = () => {
       <div className={classes.footer}>
         <div className={classes.row1}>
           <p>Registered with Swindon Borough Council as a food business.</p>
-          <div className={classes.admin}>Admin</div>
         </div>
         <div className={classes.rating}>
           <p>Food Hygiene Rating</p>

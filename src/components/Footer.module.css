@@ -33,18 +33,6 @@
     margin-right: 8px;
     font-size: 1.2rem;}
 
-.admin {
-    width:fit-content;
-    cursor: pointer;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 2px;
-    /* align-self: end;
-    justify-self: start; */
-    position: absolute;
-    right: 10px;
-}
-
 .row1 {
     position: relative;
     display: flex;
